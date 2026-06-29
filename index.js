@@ -9,3 +9,6 @@ app.get('/health', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+app.get('/', (req, res) => {
+  res.json({ message: 'ICT Backend is running' });
+});
